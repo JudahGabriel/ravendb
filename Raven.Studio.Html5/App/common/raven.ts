@@ -47,6 +47,12 @@ class raven {
         return this.fetch(url, args, raven.activeDatabase(), resultsSelector);
     }
 
+    public userInfo() {
+        this.requireActiveDatabase();
+        var url = "/debug/user-info";
+        return this.fetch(url, null, raven.activeDatabase(), null);
+    }
+
     public documents(collectionName: string, skip = 0, take = 30): JQueryPromise<pagedResultSet> {
         this.requireActiveDatabase();
 

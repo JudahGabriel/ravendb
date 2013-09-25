@@ -56,6 +56,12 @@ define(["require", "exports", "models/database", "models/collection", "models/co
             return this.fetch(url, args, raven.activeDatabase(), resultsSelector);
         };
 
+        raven.prototype.userInfo = function () {
+            this.requireActiveDatabase();
+            var url = "/debug/user-info";
+            return this.fetch(url, null, raven.activeDatabase(), null);
+        };
+
         raven.prototype.documents = function (collectionName, skip, take) {
             if (typeof skip === "undefined") { skip = 0; }
             if (typeof take === "undefined") { take = 30; }
