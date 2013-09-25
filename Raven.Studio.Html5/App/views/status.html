@@ -3,19 +3,16 @@
         <div class="col-md-2">
             <br />
             <ul class="nav nav-pills nav-stacked affix">
-                <li data-bind="click: switchView.bind($data, 'statistics')"><a href="#">Statistics</a></li>
-                <li data-bind="click: switchView.bind($data, 'logs')"><a href="#">Logs</a></li>
-                <li data-bind="click: switchView.bind($data, 'alerts')"><a href="#">Alerts</a></li>
-                <li data-bind="click: switchView.bind($data, 'index-errors')"><a href="#">Index Errors</a></li>
-                <li data-bind="click: switchView.bind($data, 'replication-statistics')"><a href="#">Replication Statistics</a></li>
-                <li data-bind="click: switchView.bind($data, 'user-info')"><a href="#">User Info</a></li>
+                <li><a href="#statistics">Statistics</a></li>
+                <li><a href="#logs">Logs</a></li>
+                <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#indexErrors">Index Errors</a></li>
+                <li><a href="#replicationStatistics">Replication Statistics</a></li>
+                <li><a href="#userInfo">User Info</a></li>
             </ul>
         </div>
         <div class="col-md-10">
-            <br />
-            <!--            <div data-bind="widget: { kind: 'dataTable', items: currentCollectionPagedItems, collections: collections }"></div>-->
-            <div data-bind="text: activeView"></div>
-            <div data-bind="text: data"></div>
+            <div data-part="content">Some default content goes here.</div>
         </div>
     </div>
 </div>

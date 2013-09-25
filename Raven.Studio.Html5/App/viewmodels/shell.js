@@ -58,6 +58,7 @@ define(["require", "exports", "plugins/router", "durandal/app", "durandal/system
                 { route: 'tasks', title: 'Tasks', moduleId: 'viewmodels/tasks', nav: true },
                 { route: 'settings', title: 'Settings', moduleId: 'viewmodels/settings', nav: true },
                 { route: 'status', title: 'Status', moduleId: 'viewmodels/status', nav: true },
+                { route: 'userInfo', title: 'User Info', moduleId: 'viewmodels/userInfo', nav: false },
                 { route: 'edit', title: 'Edit Document', moduleId: 'viewmodels/editDocument', nav: false }
             ]).buildNavigationModel();
 

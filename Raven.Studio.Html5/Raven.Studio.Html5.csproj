@@ -146,9 +146,11 @@
     <Content Include="App\viewmodels\createDatabase.js">
       <DependentUpon>createDatabase.ts</DependentUpon>
     </Content>
+    <TypeScriptCompile Include="App\viewmodels\userInfo.ts" />
     <Content Include="App\views\copyDocuments.html" />
     <Content Include="App\views\createDatabase.html" />
     <Content Include="App\views\dialog.html" />
+    <Content Include="App\views\userInfo.html" />
     <Content Include="favicon.ico" />
     <Content Include="Scripts\jwerty-0.3.js" />
     <TypeScriptCompile Include="Scripts\typings\jwerty\jwerty.d.ts" />
