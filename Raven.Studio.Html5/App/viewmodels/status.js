@@ -6,6 +6,7 @@ define(["require", "exports", "plugins/router"], function(require, exports, __du
             this.displayName = "status";
             this.router = null;
             this.router = durandalRouter.createChildRouter().map([
+                { route: 'status', moduleId: 'viewmodels/statistics', title: 'Stats', type: 'intro', nav: false },
                 { route: 'status/statistics', moduleId: 'viewmodels/statistics', title: 'Stats', type: 'intro', nav: true },
                 { route: 'status/userInfo', moduleId: 'viewmodels/userInfo', title: 'User Info', type: 'intro', nav: true }
             ]).buildNavigationModel();
